@@ -4,8 +4,11 @@ class JeuPendu
 	attr_accessor :mot_hasard, :mot, :fin_du_jeu, :mot_joueur, :vies_restantes, :joueur, :lettre_essaye
 
 	def initialize(joueur)
-		# On Choisi un mot !
-		@mot_hasard = 'bonjour'
+
+		# On Choisi un mot au hasard dans le fichier !
+		fichier = File.open("words.txt",'r').readlines
+		@mot_hasard = fichier[rand(fichier.size)]
+
 
 		# On initialise les variables
 
@@ -23,7 +26,7 @@ class JeuPendu
 		# On stock le mot dans un tableau
 
 		i = 0
-		mot_hasard.length.times do
+		mot_hasard.size.times do
 			@mot << mot_hasard[i]
 			@mot_joueur[i] = "*"
 			i = i + 1
