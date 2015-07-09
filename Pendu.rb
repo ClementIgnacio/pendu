@@ -1,6 +1,5 @@
 # encoding: UTF-8
 load 'class/Personne.rb'
-require 'gtk2'
 
 class JeuPendu
 	attr_accessor :mot_hasard, :mot, :fin_du_jeu, :mot_joueur, :vies_restantes, :joueur, :lettre_essaye
