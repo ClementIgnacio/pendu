@@ -7,4 +7,4 @@ Maintenant rendez-vous dans le dossier où vous avez cloné le projet puis éxé
 `ruby Pendu.rb`
 
 ### Erreurs
-Pensez à installer Ruby : [Installer Ruby](https://github.com/ruby/ruby).
+Pensez à installer Ruby : [Installer Ruby](https://github.com/ruby/ruby). La version utilisée est la 2.1
