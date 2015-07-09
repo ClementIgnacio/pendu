@@ -19,7 +19,7 @@ class JeuPendu
 		@vies_restantes = 7
 		@joueur = joueur
 		puts " -------------------------------------------"
-		puts " -- Bienvenue a vous #{joueur.getPseudo}. --"
+		puts " -- Bienvenue à vous #{joueur.getPseudo}. --"
 		puts " -------------------------------------------"
 		puts "\n"
 
@@ -70,18 +70,18 @@ class JeuPendu
 				i = i + 1
 			end
 			if trouve
-				puts "La lettre #{lettre} a ete trouvee !"
+				puts "La lettre #{lettre} a été trouvée !"
 			else
 				puts "Cette lettre n'est pas dans le mot !"
 				lose
 			end
 		else
-			puts "Cette lettre a deja ete essaye !"
+			puts "Cette lettre a déjà été essayé !"
 		end
 	end
 
 	def actual
-		print "Le mot a trouve est : "
+		print "Le mot à trouver est : "
 
 		mot_joueur.length.times do |lettre| #On affiche le mot du joueur
 			print mot_joueur[lettre]
@@ -103,7 +103,7 @@ class JeuPendu
 		if vies_restantes == 0
 			puts "\n"
 			puts "Pendu ! Vous avez perdu #{joueur.getPseudo} !"
-			puts "Le mot etait \"#{mot_hasard}\"."
+			puts "Le mot était \"#{mot_hasard}\"."
 			@fin_du_jeu = true
 		else
 			i = 0
@@ -116,7 +116,7 @@ class JeuPendu
 			end
 			if trouve == true # Si il a ete trouve entiérement
 				puts "\n"
-				puts "Felicitation #{joueur.getPseudo} vous avez gagne !" 
+				puts "Félicitation #{joueur.getPseudo} vous avez gagné !" 
 				@fin_du_jeu = true
 			end
 		end
@@ -129,7 +129,7 @@ class JeuPendu
 end
 puts "\n"
 puts "--------------------------------"
-puts "Vous avez lance le jeu du pendu"
+puts "Vous avez lancé le jeu du pendu"
 puts "--------------------------------"
 puts "\n"
 
