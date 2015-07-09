@@ -1,3 +1,4 @@
+# encoding: UTF-8
 class Personne 
 	attr_accessor :pseudo
 
